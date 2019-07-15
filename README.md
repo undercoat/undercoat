@@ -22,7 +22,7 @@ Undercoat.css is a **lightweight** framework with **no default theme** out of th
 Undercoat.css or just Undercoat is ready to use out of the box because it's written on vanilla CSS and doesn't require building. The main advantages are:
 
 - flexible and predictable architecture based on [BEM methodology](https://en.bem.info/methodology);
-- no need in overriding the framework styles because there's no default theme provided;
+- no need to override the framework styles because there's no default theme provided;
 - SEO-friendly semantic HTML markup enriched by [microdata](https://schema.org);
 - mobile-friendly by virtue of following of [Google recommendations](https://developers.google.com/search/mobile-sites) and using web standards capabilities;
 - [WCAG 2.0](https://www.w3.org/TR/WCAG20) compliance markup and styles for developing inclusive web interfaces.
@@ -136,7 +136,7 @@ Just remember Undercoat doesn't impose design decisions that you have to fight t
 
 ### Mobile friendly
 
-Following actual global trends, Undercoat was built based on mobile first-approach. 
+Following actual global trends, undercoat is based on the mobile-first approach.
 
 Each component provides best practices for dealing with content images on different screen resolutions and image formats.
 
