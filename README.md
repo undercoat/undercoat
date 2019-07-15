@@ -22,9 +22,9 @@ Undercoat.css is a **lightweight** framework with **no default theme** out of th
 Undercoat.css or just Undercoat is ready to use out of the box because it's written on vanilla CSS and doesn't require building. The main advantages are:
 
 - flexible and predictable architecture based on [BEM methodology](https://en.bem.info/methodology);
-- no need in overriding the framework styles because there's no default theme provided;
-- SEO-friendly semantic HTML markup enriched by [microdata](https://schema.org);
-- mobile-friendly by virtue of following of [Google recommendations](https://developers.google.com/search/mobile-sites) and using web standards capabilities;
+- no need to override the framework styles because there's no default theme provided;
+- SEO-friendly semantic HTML markup enriched with [microdata](https://schema.org);
+- mobile-friendly by virtue of following [Google recommendations](https://developers.google.com/search/mobile-sites) and using web standards capabilities;
 - [WCAG 2.0](https://www.w3.org/TR/WCAG20) compliance markup and styles for developing inclusive web interfaces.
 
 ## Installation
@@ -120,7 +120,7 @@ project
 
 ### No default theme
 
-Undercoat doesn't provide a default theme for the components. Their CSS code represents only their layout composition, not the appearance. So there's no need for a developer to override the framework styles. Just write (extend) your own code (add new properties) next to the component code following BEM's redefinition levels [rules](https://en.bem.info/methodology/redefinition-levels).
+Undercoat doesn't provide a default theme for the components. However, each component includes CSS code of the layout composition and not the appearance. So there's no need for a developer to override the framework styles. Just write (extend) your own code (add new properties) next to the component code following BEM's redefinition levels [rules](https://en.bem.info/methodology/redefinition-levels).
 
 **Example**
 
@@ -136,7 +136,7 @@ Just remember Undercoat doesn't impose design decisions that you have to fight t
 
 ### Mobile friendly
 
-Following actual global trends, Undercoat was built based on mobile first-approach. 
+Following actual global trends, undercoat is based on the mobile-first approach.
 
 Each component provides best practices for dealing with content images on different screen resolutions and image formats.
 
@@ -159,7 +159,7 @@ Each component provides best practices for dealing with content images on differ
 
 ### SEO friendly
 
-HTML markup of all components was developed based on semantic of HTML5 tags. It gives a lot of benefits besides SEO. In addition to semantic markup Undercoat components are enriched by structured metadata using [microdata](https://schema.org/docs/gs.html) for common cases (product cards, reviews, etc.).
+HTML markup of all components was developed based on semantic of HTML5 tags. It gives a lot of benefits besides SEO. In addition to semantic markup Undercoat components are enriched with structured metadata using [microdata](https://schema.org/docs/gs.html) for common cases (product cards, reviews, etc.).
 
 These efforts lead to successful project indexing by search engines and enhance website "snippet" by making it "rich", or a short piece of quoted text shown when the page appears in [search listings](https://developers.google.com/search/docs/guides/mark-up-content).
 
