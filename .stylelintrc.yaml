@@ -1,0 +1,24 @@
+extends: stylelint-config-standard
+plugins:
+  - stylelint-selector-bem-pattern
+  - stylelint-order
+rules:
+  # Override stylelint-config-standard
+  rule-empty-line-before:
+  - always
+  - except:
+    - after-single-line-comment
+    - inside-block-and-after-rule
+    - first-nested
+  # Single-quotes are our convention throughout our codebase within CSS
+  string-quotes: single
+  # Follow best practices
+  font-family-name-quotes: always-where-recommended
+  font-weight-notation: number
+  selector-attribute-quotes: always
+  # We use classic BEM syntax as our preferred way to format classes.
+  plugin/selector-bem-pattern:
+    componentName: ^[a-z]+(?:-[a-z]+)*$
+    # <namespace>-<block>__<element>*_<modifier>*[<attribute>]*
+    componentSelectors: ^\.{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:_[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$
+  # Order will be soon
