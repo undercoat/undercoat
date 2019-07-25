@@ -14,7 +14,7 @@ rules:
   string-quotes: single
   # Follow best practices
   font-family-name-quotes: always-where-recommended
-  font-weight-notation: number
+  font-weight-notation: numeric
   selector-attribute-quotes: always
   # We use classic BEM syntax as our preferred way to format classes.
   plugin/selector-bem-pattern:
