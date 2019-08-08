@@ -1,18 +1,16 @@
 {
-  "name": "@undercoatcss/framework",
+  "name": "@undercoatcss/grid",
   "version": "0.0.0",
-  "description": "A lightweight CSS framework with no default theme out of the box.",
+  "description": "Grid component for the Undercoat CSS Framework",
   "keywords": [
     "CSS framework",
     "CSS",
-    "framework"
+    "framework",
+    "grid"
   ],
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/undercoat/undercoat.git"
-  },
-  "dependencies": {
-    "@undercoatcss/grid": "^0.0.0"
   }
 }
