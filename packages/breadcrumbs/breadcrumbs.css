@@ -1,0 +1,49 @@
+/* -------------------------------------------------- */
+/* Composition                                        */
+/* -------------------------------------------------- */
+
+.breadcrumbs {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+}
+
+/*Item*********************************************/
+/* -------------------------------------------------- */
+/* Variables                                          */
+/* -------------------------------------------------- */
+
+:root {
+  /* Typographic */
+  --breadcrumbs-separator: "\2192";
+}
+
+/* -------------------------------------------------- */
+/* Composition                                        */
+/* -------------------------------------------------- */
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: var(--breadcrumbs-separator);
+}
+
+/*lastItemNewLine*************/
+/* -------------------------------------------------- */
+/* Composition                                        */
+/* -------------------------------------------------- */
+
+.breadcrumbs_last-item-newline {
+  flex-wrap: wrap;
+}
+
+.breadcrumbs_last-item-newline :last-child {
+  flex-basis: 100%;
+}
+/*last-separator-hidden.css**********************/
+/* -------------------------------------------------- */
+/* Composition                                        */
+/* -------------------------------------------------- */
+
+.breadcrumbs_last-separator-hidden :nth-last-child(2)::after {
+  content: '';
+}
