@@ -1,6 +1,7 @@
 Undercoat.css is a **lightweight** framework with **no default theme** out of the box. So you **don't need to fight** against it!
 
-![Travis (.org)](https://img.shields.io/travis/undercoat/undercoat.svg?style=flat-square) ![GitHub release](https://img.shields.io/github/release/undercoat/undercoat.svg?style=flat-square) ![npm](https://img.shields.io/npm/v/undercoat.svg?style=flat-square)  ![npm](https://img.shields.io/npm/dt/undercoat.svg?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/undercoatcss.svg?label=Follow&style=flat-square) ![WCAG 2.0 Level AA](https://img.shields.io/badge/WCAG_2.0-Level_AA-brightgreen.svg?style=flat-square) ![schema.org](https://img.shields.io/badge/microdata-schema.org-brightgreen.svg?style=flat-square)
+
+![Travis (.org)](https://img.shields.io/travis/undercoat/undercoat.svg?style=flat-square) ![GitHub release](https://img.shields.io/github/release/undercoat/undercoat.svg?style=flat-square) ![npm (scoped)](https://img.shields.io/npm/v/@undercoatcss/framework) ![npm](https://img.shields.io/npm/dt/undercoat/.svg?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/undercoatcss.svg?label=Follow&style=flat-square) ![WCAG 2.0 Level AA](https://img.shields.io/badge/WCAG_2.0-Level_AA-brightgreen.svg?style=flat-square) ![schema.org](https://img.shields.io/badge/microdata-schema.org-brightgreen.svg?style=flat-square)
 
 ---
 
