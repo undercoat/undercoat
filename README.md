@@ -51,33 +51,17 @@ npm i @undercoatcss/framework
 
 After installation, you can link or import the CSS file into your project:
 
-### HTML
-
-```html
-<link rel="stylesheet" href="/path/to/undercoat.css" />
-```
-
-### CSS
-
-```css
-@import '/path/to/undercoat.css';
-```
-
-### Via PostCSS and [postcss-import](https://github.com/postcss/postcss-import)
-
-```sh
-import 'undercoat';
-```
-
-### Via webpack and [css-loader](https://github.com/webpack-contrib/css-loader)
-
-```sh
-import 'undercoat';
-```
-
 ### CDN
 
-Coming soon!
+```html
+<link rel="stylesheet" href="https://unpkg.com/@undercoatcss/framework@latest/dist/framework.min.css">
+```
+
+### Webpack
+
+```sh
+import '@undercoatcss/framework/framework.css';
+```
 
 ## Browser support
 
@@ -187,3 +171,4 @@ If you're interested in the improvement of this project you can help in the foll
 
 - bug reporting and new feature requesting by creating issues on plugin [GitHub page](https://github.com/undercoat/undercoat/issues);
 - contribution to a project following these [instructions](https://github.com/undercoat/undercoat/blob/master/CONTRIBUTING.md).
+
