@@ -34,7 +34,9 @@ Please note, Undercoat is constantly in development! Try it out on your own risk
 
 ### NPM
 
-Coming soon!
+```sh
+npm i @undercoatcss/framework
+```
 
 ## Usage
 
