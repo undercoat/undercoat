@@ -11,12 +11,21 @@ Undercoat.css is a **lightweight** framework with **no default theme** out of th
 
 ## Contents
 
-1. [Description](#Description)
-2. [Installation](#Installation)
-3. [Usage](#Usage)
-4. [Browser support](#Browser-support)
-5. [Key concepts](#Key-concepts)
-6. [Contributing](#Contributing)
+- [Contents](#contents)
+- [Description](#description)
+- [Installation](#installation)
+  - [NPM](#npm)
+- [Usage](#usage)
+  - [CDN](#cdn)
+  - [Webpack](#webpack)
+- [Browser support](#browser-support)
+- [Key concepts](#key-concepts)
+  - [BEM methodology](#bem-methodology)
+  - [No default theme](#no-default-theme)
+  - [Mobile friendly](#mobile-friendly)
+  - [SEO friendly](#seo-friendly)
+  - [WCAG 2.0 compliance](#wcag-20-compliance)
+- [Contributing](#contributing)
 
 ## Description
 
@@ -34,39 +43,25 @@ Please note, Undercoat is constantly in development! Try it out on your own risk
 
 ### NPM
 
-Coming soon!
+```sh
+npm i @undercoatcss/framework
+```
 
 ## Usage
 
 After installation, you can link or import the CSS file into your project:
 
-### HTML
-
-```html
-<link rel="stylesheet" href="/path/to/undercoat.css" />
-```
-
-### CSS
-
-```css
-@import '/path/to/undercoat.css';
-```
-
-### Via PostCSS and [postcss-import](https://github.com/postcss/postcss-import)
-
-```sh
-import 'undercoat';
-```
-
-### Via webpack and [css-loader](https://github.com/webpack-contrib/css-loader)
-
-```sh
-import 'undercoat';
-```
-
 ### CDN
 
-Coming soon!
+```html
+<link rel="stylesheet" href="https://unpkg.com/@undercoatcss/framework@latest/dist/framework.min.css">
+```
+
+### Webpack
+
+```sh
+import '@undercoatcss/framework/framework.css';
+```
 
 ## Browser support
 
@@ -91,11 +86,11 @@ The `.browserlist` config is provided.
 
 Undercoat is based on the next main principles:
 
-- [BEM methodology](#BEM-methodology)
-- [No default theme](#No-default-theme)
-- [Mobile friendly](#Mobile-friendly)
-- [SEO friendly](#SEO-friendly)
-- [WCAG 2.0 compliance](#WCAG-20-compliance)
+- [BEM methodology](#bem-methodology)
+- [No default theme](#no-default-theme)
+- [Mobile friendly](#mobile-friendly)
+- [SEO friendly](#seo-friendly)
+- [WCAG 2.0 compliance](#wcag-20-compliance)
 
 ### BEM methodology
 
@@ -176,3 +171,4 @@ If you're interested in the improvement of this project you can help in the foll
 
 - bug reporting and new feature requesting by creating issues on plugin [GitHub page](https://github.com/undercoat/undercoat/issues);
 - contribution to a project following these [instructions](https://github.com/undercoat/undercoat/blob/master/CONTRIBUTING.md).
+
