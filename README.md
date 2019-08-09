@@ -11,12 +11,21 @@ Undercoat.css is a **lightweight** framework with **no default theme** out of th
 
 ## Contents
 
-1. [Description](#Description)
-2. [Installation](#Installation)
-3. [Usage](#Usage)
-4. [Browser support](#Browser-support)
-5. [Key concepts](#Key-concepts)
-6. [Contributing](#Contributing)
+- [Contents](#contents)
+- [Description](#description)
+- [Installation](#installation)
+  - [NPM](#npm)
+- [Usage](#usage)
+  - [CDN](#cdn)
+  - [Webpack](#webpack)
+- [Browser support](#browser-support)
+- [Key concepts](#key-concepts)
+  - [BEM methodology](#bem-methodology)
+  - [No default theme](#no-default-theme)
+  - [Mobile friendly](#mobile-friendly)
+  - [SEO friendly](#seo-friendly)
+  - [WCAG 2.0 compliance](#wcag-20-compliance)
+- [Contributing](#contributing)
 
 ## Description
 
@@ -93,11 +102,11 @@ The `.browserlist` config is provided.
 
 Undercoat is based on the next main principles:
 
-- [BEM methodology](#BEM-methodology)
-- [No default theme](#No-default-theme)
-- [Mobile friendly](#Mobile-friendly)
-- [SEO friendly](#SEO-friendly)
-- [WCAG 2.0 compliance](#WCAG-20-compliance)
+- [BEM methodology](#bem-methodology)
+- [No default theme](#no-default-theme)
+- [Mobile friendly](#mobile-friendly)
+- [SEO friendly](#seo-friendly)
+- [WCAG 2.0 compliance](#wcag-20-compliance)
 
 ### BEM methodology
 
