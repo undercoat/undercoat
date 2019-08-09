@@ -34,10 +34,11 @@ Add the utility CSS class `.subgrid` to a grid item in the markup (HTML) to make
 
 There's a special custom property `--grid-column-size` with a dynamic automatically calculated value. It returns a column size in percents based on the value of current columns number specified in the `--grid-columns-number` custom property for a current context.
 
-It's useful to place items on the virtual grid in a non-grid container placed itself on the grid. In the example below each flex item will have a width equal to three columns of the grid and will be aligned on the grid:
+It's useful to place items on the virtual grid in a non-grid container placed itself on the grid. In the example below each flex item will have a width equal to three columns of the grid and will be aligned to it:
 
 ```CSS
 .flex-container {
+  grid-column: grid-start / grid-end;
   display: flex;
 }
 
