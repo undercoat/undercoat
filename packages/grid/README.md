@@ -7,16 +7,16 @@ The grid is based on 24 columns (tracks) by default. It's like 12 columns but mo
 The default grid settings are stored in CSS custom properties and are below (px units):
 ```CSS
   --grid-columns-number: 24; /* columns number */
-  --grid-columns-min: 13;    /* column (track) min width */
-  --grid-columns-max: 50;    /* column (track) max width */
+  --grid-columns-width-min: 13;    /* column (track) min width */
+  --grid-columns-width-max: 50;    /* column (track) max width */
   --grid-width-max: 1920;    /* grid wrapper max width */
   --grid-column-gap: 0;      /* columns gutter (gap) width */
   --grid-margin-inline: 2vw; /* column grid inline margins */
 ```
 
-Min width of the grid wrapper is set automatically by multiplying of `--grid-columns-number` on `--grid-columns-min` custom properties (variables). Max width is stored in `--grid-width-max` custom property and can be changed manually.
+Min width of the grid wrapper is set automatically by multiplying of `--grid-columns-number` on `--grid-columns-width-min` custom properties (variables). Max width is stored in `--grid-width-max` custom property and can be changed manually.
 
-> Don't use equal values for `--grid-columns-min` and `--grid-columns-max` custom properties because it leads to fixed column width, which isn't appropriate for the mobile first approach!
+> Don't use equal values for `--grid-columns-width-min` and `--grid-columns-width-max` custom properties because it leads to fixed column width, which isn't appropriate for the mobile first approach!
 
 ## Layout templates
 
@@ -52,7 +52,7 @@ It's useful to place items on the virtual grid in a non-grid container placed it
 
 ## Expanding blocks
 
-On the large screens, it can be appropriate to limit the width of the content area and make it less than the viewport width. For example, to make centered horizontally content area 1200px width with a 20-columns grid set `--grid-columns-max` value to `50`.
+On the large screens, it can be appropriate to limit the width of the content area and make it less than the viewport width. For example, to make centered horizontally content area 1200px width with a 20-columns grid set `--grid-columns-width-max` value to `50`.
 
 In this case, you can expand a grid item to the full `--grid-width-max` width by adding `.grid__itemExpand` CSS class to it.
 
