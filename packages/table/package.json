@@ -1,5 +1,5 @@
 {
-  "name": "@undercoatcss/framework",
+  "name": "@undercoatcss/table",
   "version": "0.1.1",
   "description": "A lightweight CSS framework with no default theme out of the box.",
   "keywords": [
@@ -11,8 +11,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/undercoat/undercoat.git"
-  },
-  "dependencies": {
-    "@undercoatcss/table": "^0.1.1"
   }
 }

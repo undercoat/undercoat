@@ -1,0 +1,23 @@
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.table__data,
+.table__header {
+  border: none;
+  white-space: nowrap;
+  text-align: unset;
+  font-weight: normal;
+}
+
+.table__inner {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
