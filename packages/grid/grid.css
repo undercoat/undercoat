@@ -31,7 +31,7 @@
   grid-column-gap: var(--grid-column-gap-size);
 }
 
-.grid__itemExpand  {
+.grid__itemExpand {
   grid-column: expand-start / expand-end;
 }
 
