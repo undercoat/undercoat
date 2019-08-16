@@ -1,0 +1,30 @@
+.dialog {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  visibility: hidden;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  transition: visibility 0s var(--dialog__body--transition-duration, 0.5s);
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dialog_active {
+  --dialog__body--opacity: 1;
+  visibility: visible;
+  transition: none;
+}
+
+.dialog__body {
+  max-width: 100%;
+  transition-timing-function: var(--dialog__body--transition-timing-function, ease);
+  transition-duration: var(--dialog__body--transition-duration, 0.5s);
+  transition-property: opacity;
+  opacity: var(--dialog__body--opacity, 0);
+}
