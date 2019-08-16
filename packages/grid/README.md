@@ -28,7 +28,7 @@ Columns help keep the UI svelte and template areas make UI components positionin
 
 Due to the fact that Subgrids section from CSS Grid Layout Module Level 2 specification has a weak browsers support, we have to forward subgrids manually in grid container items if it's necessary.
 
-Add the utility CSS class `.subgrid` to a grid item in the markup (HTML) to make it a new grid container with the same number of columns. Make sure the value of the `--grid-columns-number` custom property it this context is equal to the number of the columns which grid item takes. 
+Add the utility CSS class `.subgrid` to a grid item in the markup (HTML) to make it a new grid container with the same number of columns. Make sure the value of the `--grid-columns-number` custom property in this context is equal to the number of the columns which grid item takes. 
 
 ## Column percentage size custom property
 
