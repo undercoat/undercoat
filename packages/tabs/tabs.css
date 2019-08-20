@@ -1,0 +1,8 @@
+.tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs__panel:not(.tabs__panel_active) {
+  display: none;
+}
