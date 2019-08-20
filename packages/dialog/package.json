@@ -12,5 +12,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/undercoat/undercoat.git"
+  },
+  "dependencies": {
+    "focus-trap": "^5.0.2"
   }
 }
