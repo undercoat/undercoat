@@ -1,14 +1,14 @@
-html.noscroll {
+.backdrop-noscroll {
   overflow-y: hidden;
   height: 100%;
 }
 
-html.noscroll body {
-  overflow: hidden;
+.backdrop-hasScrollbar {
+  overflow-y: scroll;
 }
 
-html.has-scrollbar {
-  overflow-y: scroll;
+.backdrop-fixed {
+  overflow: hidden;
 }
 
 .backdrop {

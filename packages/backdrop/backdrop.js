@@ -2,8 +2,9 @@ export default new class Backdrop {
   constructor() {
     this.backdropSelector = 'backdrop';
     this.backdropVisibleSelector = 'backdrop_visible';
-    this.htmlScrollbarSelector = 'has-scrollbar';
-    this.htmlNoScrollSelector = 'noscroll';
+    this.htmlScrollbarSelector = 'backdrop-hasScrollbar';
+    this.htmlNoScrollSelector = 'backdrop-noscroll';
+    this.bodyFixedSelector = 'backdrop-fixed';
   }
 
   show() {
@@ -42,6 +43,7 @@ export default new class Backdrop {
     }
 
     document.documentElement.classList.add(this.htmlNoScrollSelector);
+    document.body.classList.add(this.bodyFixedSelector);
   }
 
   unfixViewport() {
@@ -49,6 +51,7 @@ export default new class Backdrop {
 
     document.documentElement.classList.remove(this.htmlScrollbarSelector);
     document.documentElement.classList.remove(this.htmlNoScrollSelector);
+    document.body.classList.remove(this.bodyFixedSelector);
     document.body.style.marginTop = null;
     window.scrollTo(null, newScrollTop);
   }
