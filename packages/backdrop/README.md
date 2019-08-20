@@ -22,6 +22,7 @@ Helper accepts some css custom properties
 
 | Property | Default value |
 | --- | --- |
+| --backdrop--z-index | 99 |
 | --backdrop--opacity | 0.5 |
 | --backdrop--background-color | #000000 |
 | --backdrop--transition-duration | 0.5s |
@@ -30,9 +31,17 @@ Helper accepts some css custom properties
 ## Methods
 
 ### show()
+Show backdrop
+```javascript
+import Backdrop from '@undercoatcss/backdrop';
 
-`Show backdrop`
+Backdrop.show();
+```
 
 ### hide()
+Hide backdrop
+```javascript
+import Backdrop from '@undercoatcss/backdrop';
 
-`Hide backdrop`
+Backdrop.hide();
+```
