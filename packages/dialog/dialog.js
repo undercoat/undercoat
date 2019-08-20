@@ -56,17 +56,17 @@ export default new class Dialog {
     window.addEventListener('popstate', () => {
       this.showHashed();
     });
+
+    this.showHashed();
   }
 
   show(id) {
-    if (!document.querySelector(`#${id}`)) return;
+    if (!document.querySelector(`#${id}.${this.dialogSelector}`)) return;
 
     if (this.activeDialog) {
-      this.hide({
-        hideOverlay: false,
-      });
+      this.hide(false);
     } else {
-      Overlay.show();
+      Backdrop.show();
     }
 
     this.activeDialog = document.querySelector(`#${id}`);
@@ -83,7 +83,7 @@ export default new class Dialog {
     if (hash.length > 1) this.show(hash.substr(1));
   }
 
-  hide({ hideOverlay = true } = {}) {
+  hide(hideBackdrop = true) {
     if (!this.activeDialog) return;
 
     this.deactivateFocusTrap();
@@ -91,8 +91,8 @@ export default new class Dialog {
     this.activeDialog.classList.remove(this.dialogActiveSelector);
     window.history.replaceState('', document.title, window.location.pathname + window.location.search);
 
-    if (hideOverlay) {
-      Overlay.hide();
+    if (hideBackdrop) {
+      Backdrop.hide();
       this.activeDialog = null;
     }
   }
