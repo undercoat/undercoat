@@ -14,8 +14,7 @@ const plugins = [
         stage: 3,
         features: {
           'custom-media-queries': true,
-          'nesting': true,
-          'logical': true // TODO: NOT WORKING
+          'nesting': true
         }
       }),
       csso()
