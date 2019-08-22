@@ -1,14 +1,15 @@
-extends: stylelint-config-standard
+extends:
+  - stylelint-config-standard
+  - stylelint-config-rational-order
 plugins:
-  - stylelint-selector-bem-pattern
   - stylelint-order
+  - stylelint-config-rational-order/plugin
 rules:
   # Override stylelint-config-standard
   rule-empty-line-before:
   - always
   - except:
     - after-single-line-comment
-    - inside-block-and-after-rule
     - first-nested
   # Single-quotes are our convention throughout our codebase within CSS
   string-quotes: single
@@ -16,9 +17,11 @@ rules:
   font-family-name-quotes: always-where-recommended
   font-weight-notation: numeric
   selector-attribute-quotes: always
-  # We use classic BEM syntax as our preferred way to format classes.
-  plugin/selector-bem-pattern:
-    componentName: ^[a-z]+(?:-[a-z]+)*$
-    # <namespace>-<block>__<element>*_<modifier>*[<attribute>]*
-    componentSelectors: ^\.{componentName}(?:__[a-z]+(?:-[a-z]+)*)*(?:_[a-z]+(?:-[a-z]+)*)*(?:\[.+\])*$
-  # Order will be soon
+  order/order:
+  - custom-properties
+  - declarations
+  # Properties are grouped(clustered) into buckets by a sense
+  plugin/rational-order:
+  - true
+  - border-in-box-model: false
+    empty-line-between-groups: false
