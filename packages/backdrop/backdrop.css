@@ -1,6 +1,6 @@
 .backdrop-noscroll {
-  overflow-y: hidden;
   height: 100%;
+  overflow-y: hidden;
 }
 
 .backdrop-hasScrollbar {
@@ -13,19 +13,19 @@
 
 .backdrop {
   position: fixed;
-  z-index: var(--backdrop--z-index, 99);
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  visibility: hidden;
-  transition: opacity var(--backdrop--transition-duration, 0.5s) var(--backdrop--transition-timing-function, ease), visibility 0s var(--backdrop--transition-duration, 0.5s);
-  opacity: 0;
+  z-index: var(--backdrop--z-index, 99);
   background-color: var(--backdrop--background-color, #000000);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--backdrop--transition-duration, 0.5s) var(--backdrop--transition-timing-function, ease), visibility 0s var(--backdrop--transition-duration, 0.5s);
 }
 
 .backdrop_visible {
   visibility: visible;
+  opacity: var(--backdrop--opacity, 0.5);
   transition: opacity var(--backdrop--transition-duration, 0.5s) var(--backdrop--transition-timing-function, ease);
-  opacity: var(--backdrop--opacity, 0.5)
 }

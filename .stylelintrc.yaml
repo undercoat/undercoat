@@ -17,6 +17,7 @@ rules:
   font-family-name-quotes: always-where-recommended
   font-weight-notation: numeric
   selector-attribute-quotes: always
+  color-hex-length: long # TODO: Think about using only RGBA notation
   order/order:
   - custom-properties
   - declarations
@@ -25,3 +26,4 @@ rules:
   - true
   - border-in-box-model: false
     empty-line-between-groups: false
+  # TODO: Think about border property in a Box Model group
