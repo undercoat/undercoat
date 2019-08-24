@@ -1,0 +1,19 @@
+{
+  "version": "0.2.1",
+  "command": {
+    "version": {
+      "allowBranch": [
+        "master"
+      ],
+      "conventionalCommits": true
+    },
+    "publish": {
+      "ignoreChanges": [
+        "*.md"
+      ]
+    }
+  },
+  "packages": [
+    "packages/*"
+  ]
+}
