@@ -14,7 +14,7 @@ rules:
   # Single-quotes are our convention throughout our codebase within CSS
   string-quotes: single
   # Follow best practices
-  font-family-name-quotes: always-where-recommended
+  font-family-name-quotes: always-unless-keyword
   font-weight-notation: numeric
   selector-attribute-quotes: always
   color-hex-length: long # TODO: Think about using only RGBA notation
