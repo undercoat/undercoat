@@ -2,7 +2,7 @@
 
 Backdrop is a component of the [Undercoat.css](https://github.com/undercoat/undercoat) framework.
 
-![npm (scoped)](https://img.shields.io/npm/v/@undercoatcss/backdrop?style=flat-square) ![Twitter Follow](https://img.shields.io/twitter/follow/undercoatcss.svg?label=Follow&style=flat-square) ![WCAG 2.0 Level AA](https://img.shields.io/badge/WCAG_2.0-Level_AA-brightgreen.svg?style=flat-square) ![schema.org](https://img.shields.io/badge/microdata-schema.org-brightgreen.svg?style=flat-square)
+![Travis (.org)](https://img.shields.io/travis/undercoat/undercoat.svg?style=flat-square) ![npm (scoped)](https://img.shields.io/npm/v/@undercoatcss/backdrop?style=flat-square) ![WCAG 2.0 Level AA](https://img.shields.io/badge/WCAG_2.0-Level_AA-brightgreen.svg?style=flat-square) ![schema.org](https://img.shields.io/badge/microdata-schema.org-brightgreen.svg?style=flat-square)
 
 > **CAUTION! IT'S UNDER HEAVY DEVELOPMENT CURRENTLY! DON'T USE IT IN PRODUCTION!**
 

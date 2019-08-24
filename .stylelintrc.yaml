@@ -1,0 +1,29 @@
+extends:
+  - stylelint-config-standard
+  - stylelint-config-rational-order
+plugins:
+  - stylelint-order
+  - stylelint-config-rational-order/plugin
+rules:
+  # Override stylelint-config-standard
+  rule-empty-line-before:
+  - always
+  - except:
+    - after-single-line-comment
+    - first-nested
+  # Single-quotes are our convention throughout our codebase within CSS
+  string-quotes: single
+  # Follow best practices
+  font-family-name-quotes: always-unless-keyword
+  font-weight-notation: numeric
+  selector-attribute-quotes: always
+  color-hex-length: long # TODO: Think about using only RGBA notation
+  order/order:
+  - custom-properties
+  - declarations
+  # Properties are grouped (clustered) into buckets by a sense
+  plugin/rational-order:
+  - true
+  - border-in-box-model: false
+    empty-line-between-groups: false
+  # TODO: Think about border property in a Box Model group

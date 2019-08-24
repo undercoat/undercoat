@@ -26,6 +26,7 @@ const plugins = [
     extract: true
   })
 ]
+// TODO: Add stylelint to Rollup or PostCSS plugins
 
 export default [{
     input: 'packages/framework/framework.js',
