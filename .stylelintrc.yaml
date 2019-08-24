@@ -20,7 +20,7 @@ rules:
   order/order:
   - custom-properties
   - declarations
-  # Properties are grouped(clustered) into buckets by a sense
+  # Properties are grouped (clustered) into buckets by a sense
   plugin/rational-order:
   - true
   - border-in-box-model: false
