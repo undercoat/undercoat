@@ -47,10 +47,10 @@ export default [{
     plugins: plugins
   },
   {
-    input: 'packages/breadcrumbs/breadcrumbs.js',
+    input: 'packages/breadcrumb/breadcrumb.js',
     output: {
       name: 'Backdrop',
-      file: 'packages/breadcrumbs/dist/breadcrumbs.min.js',
+      file: 'packages/breadcrumb/dist/breadcrumb.min.js',
       format: 'umd'
     },
     plugins: plugins

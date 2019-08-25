@@ -14,6 +14,6 @@
   },
   "dependencies": {
     "@undercoatcss/backdrop": "^0.2.1",
-    "@undercoatcss/breadcrumbs": "^0.1.0"
+    "@undercoatcss/breadcrumb": "^0.1.0"
   }
 }
