@@ -1,1 +1,1 @@
-export default function Breadcrumbs () {}
+export default function Breadcrumb () {}

@@ -48,14 +48,14 @@ The component provides CSS custom property to change its defaults.
 
 ```html
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <ul class="breadcrumb__list" role="list">
-    <li class="breadcrumb__item" role="listitem">
+  <ul class="breadcrumb__list">
+    <li class="breadcrumb__item">
       <a class="breadcrumb__link" href="#">Index</a>
     </li>
-    <li class="breadcrumb__item" role="listitem">
+    <li class="breadcrumb__item">
       <a class="breadcrumb__link" href="#">Category</a>
     </li>
-    <li class="breadcrumb__item" role="listitem">
+    <li class="breadcrumb__item">
       <a class="breadcrumb__link" aria-current="page">Subategory</a>
     </li>
   </ul>
@@ -66,20 +66,20 @@ The component provides CSS custom property to change its defaults.
 
 ```html
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <ul class="breadcrumb__list" role="list" itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li class="breadcrumb__item" role="listitem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+  <ul class="breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
       <span itemprop="name">
-        <a class="breadcrumbs__link" href="#" itemtype="http://schema.org/Thing" itemprop="item">Index</a>
+        <a class="breadcrumb__link" href="#" itemtype="http://schema.org/Thing" itemprop="item">Index</a>
       </span>
       <meta itemprop="position" content="1">
     </li>
-    <li class="breadcrumb__item" role="listitem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <li class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
       <span itemprop="name">
         <a class="breadcrumb__link" href="#" itemtype="http://schema.org/Thing" itemprop="item">Category</a>
       </span>
       <meta itemprop="position" content="2">
     </li>
-    <li class="breadcrumb__item" role="listitem">
+    <li class="breadcrumb__item">
       <a class="breadcrumb__link" aria-current="page">Subategory</a>
     </li>
   </ul>

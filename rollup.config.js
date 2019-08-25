@@ -49,7 +49,7 @@ export default [{
   {
     input: 'packages/breadcrumb/breadcrumb.js',
     output: {
-      name: 'Backdrop',
+      name: 'Breadcrumb',
       file: 'packages/breadcrumb/dist/breadcrumb.min.js',
       format: 'umd'
     },

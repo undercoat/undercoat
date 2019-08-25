@@ -1,7 +1,7 @@
 {
-  "name": "@undercoatcss/breadcrumbs",
+  "name": "@undercoatcss/breadcrumb",
   "version": "0.1.0",
-  "description": "Breadcrumb components for the Undercoat CSS framework",
+  "description": "Breadcrumb component for the Undercoat CSS framework",
   "keywords": [
     "breadcrumb",
     "undercoat"

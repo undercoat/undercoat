@@ -6,11 +6,15 @@
   display: flex;
   margin: 0;
   padding-left: 0;
-  list-style: none;
 }
 
 .breadcrumb__item {
   display: flex;
+  list-style-type: none;
+}
+
+.breadcrumb__item::before {
+  content: '\200B'; /* fix for sreen readers */
 }
 
 .breadcrumb__item:not(:last-child)::after {

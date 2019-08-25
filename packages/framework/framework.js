@@ -1,5 +1,5 @@
 import Backdrop from '../backdrop/backdrop';
-import Breadcrumbs from '../breadcrumb/breadcrumb';
+import Breadcrumb from '../breadcrumb/breadcrumb';
 import './framework.css'
 
 export default function undercoat() {
