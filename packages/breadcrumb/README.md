@@ -1,159 +1,123 @@
-# Breadcrumbs block
+# @undercoatcsss/breadcrumb
 
-**Breadcrumbs** is a logically and functionally independent reusable page component ([block](https://en.bem.info/methodology/key-concepts/#block)), which represents a secondary navigation scheme that reveals the user's location in a website.
+Backdrop is a component of the [Undercoat.css](https://github.com/undercoat/undercoat) framework.
 
-HTML implementation:
+![Travis (.org)](https://img.shields.io/travis/undercoat/undercoat.svg?style=flat-square) ![npm (scoped)](https://img.shields.io/npm/v/@undercoatcss/breadcrumb?style=flat-square) ![WCAG 2.0 Level AA](https://img.shields.io/badge/WCAG_2.0-Level_AA-brightgreen.svg?style=flat-square) ![schema.org](https://img.shields.io/badge/microdata-schema.org-brightgreen.svg?style=flat-square)
 
-```html
-<ul class="breadcrumbs" role="navigation list" aria-label="breadcrumbs">
-    <li class="breadcrumbs__item" role="listitem"><a class="breadcrumbs__link" href="#">Index</a></li>
-    <li class="breadcrumbs__item" role="listitem"><a class="breadcrumbs__link" href="#">Category</a></li>
-    <li class="breadcrumbs__item" role="listitem"><a class="breadcrumbs__link" aria-current="page">Subategory</a></li>
-</ul>
+> **CAUTION! IT'S UNDER HEAVY DEVELOPMENT CURRENTLY! DON'T USE IT IN PRODUCTION!**
+
+## Description
+
+Breadcrumb is a logically and functionally independent reusable **page component** (block), which represents a **secondary navigation scheme** that reveals the user's location in a website.
+
+## Installation
+
+### NPM
+
+```bash
+npm install @undercoatcss/breadcrumb
 ```
-HTML implementation with microdata:
+
+## Usage
+
+After installation, you can link or import the assets into your project:
+
+### CDN
 
 ```html
-<ul class="breadcrumbs" role="navigation list" aria-label="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li class="breadcrumbs__item" role="listitem" role="listitem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <span itemprop="name">
-            <a class="breadcrumbs__link" href="#" itemtype="http://schema.org/Thing" itemprop="item">Index</a>
-        </span>
-        <meta itemprop="position" content="1" />
+<link rel="stylesheet" href="https://unpkg.com/@undercoatcss/breadcrumb@latest/dist/breadcrumb.min.css">
+```
+
+### Webpack
+
+```javascript
+import '@undercoatcss/breadcrumb/breadcrumb.css';
+```
+
+## Settings
+
+The component provides CSS custom property to change its defaults.
+
+| Property                               | Default value
+| -                                      | -
+| --breadcrumb--separator                | \2192
+
+## HTML markup
+
+### Without microdata
+
+```html
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul class="breadcrumb__list" role="list">
+    <li class="breadcrumb__item" role="listitem">
+      <a class="breadcrumb__link" href="#">Index</a>
     </li>
-    <li class="breadcrumbs__item" role="listitem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <span itemprop="name">
-            <a class="breadcrumbs__link" href="#" itemtype="http://schema.org/Thing" itemprop="item">Category</a>
-        </span>
-        <meta itemprop="position" content="2" />
+    <li class="breadcrumb__item" role="listitem">
+      <a class="breadcrumb__link" href="#">Category</a>
     </li>
-    <li class="breadcrumbs__item" role="listitem">
-        <a class="breadcrumbs__link" aria-current="page">Subategory</a>
+    <li class="breadcrumb__item" role="listitem">
+      <a class="breadcrumb__link" aria-current="page">Subategory</a>
     </li>
-</ul>
+  </ul>
+</nav>
 ```
 
-
-
-
-
-## Using
-
-Add `@import 'breadcrumbs-export.css';` file to your CSS entry point.
-
-## Modification methods
-
-The defadivt behavior and appereance of the button block can modified using these BEM [modification methods](https://en.bem.info/methodology/block-modification/):
-
-* [Modifiers](https://en.bem.info/methodology/block-modification/#using-a-modifier-to-change-a-block)
-* [Mixes](https://en.bem.info/methodology/block-modification/#using-a-mix-to-change-a-block)
-* [Redefinition levels](https://en.bem.info/methodology/block-modification/#using-redefinition-levels-to-change-a-block)
-
-### Modification by modifiers
-
-Use a [modifier](https://en.bem.info/methodology/block-modification/#using-a-modifier-to-change-a-block) to change one specific instance of a block without affecting surrounding blocks.
-
-The **Breadcrumbs** block has the following predefined modifiers:
-
-```css
-.breadcrumbs_last-item-newline      /* moves the last item to the new line */
-.breadcrumbs_last-separator-hidden  /* hide last separator */
-```
-
-Let's move the **Breadcrumbs** block last item  to the new line by adding `breadcrumbs_last-item-newline` modifier which is usefdiv if you want to present it visually as a page header.
-
-HTML implementation:
+### With microdata
 
 ```html
-<div class="breadcrumbs breadcrumbs_last-item-newline">
-    …
-</div>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul class="breadcrumb__list" role="list" itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumb__item" role="listitem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <span itemprop="name">
+        <a class="breadcrumbs__link" href="#" itemtype="http://schema.org/Thing" itemprop="item">Index</a>
+      </span>
+      <meta itemprop="position" content="1">
+    </li>
+    <li class="breadcrumb__item" role="listitem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <span itemprop="name">
+        <a class="breadcrumb__link" href="#" itemtype="http://schema.org/Thing" itemprop="item">Category</a>
+      </span>
+      <meta itemprop="position" content="2">
+    </li>
+    <li class="breadcrumb__item" role="listitem">
+      <a class="breadcrumb__link" aria-current="page">Subategory</a>
+    </li>
+  </ul>
+</nav>
 ```
 
-You can add any number of modifiers to a block. For example add `breadcrumbs_last-separator-hidden` to hide the separator before the last item.
+## Browser support
 
-HTML implementation:
+Undercoat is compatible with **2 recent** desktop versions of:
 
-```html
-<div class="breadcrumbs breadcrumbs_last-item-newline breadcrumbs_last-separator-hidden">
-    …
-</div>
-```
+* Chrome
+* Edge
+* Firefox
+* Opera
+* Safari
 
-You can add your custom modifiers on project [redefinition level](#Modification-by-redefinition-levels).
+and **2 recent** mobile versions of:
 
-### Modification by mixes
+* Chrome
+* Safari
 
-Use a [mix](https://en.bem.info/methodology/block-modification/#using-a-mix-to-change-a-block) to place additional BEM entities on the same DOM node as the block to combine the behavior and style of mdivtiple entities without duplicating code and affecting surrounding blocks.
+We support only recent browsers to keep the components codebase clean and provide high performance.
 
-Let's place the **Breadcrumbs** block in the specific `grid-area`. In the BEM methodology, a block's position on the page is set in the parent block as their element and is mixed with the placed block. This allows the blocks to be independent and reusable.
+The `.browserlist` config is provided.
 
-HTML implementation:
+## Key concepts
 
-```html
-<main class="content">
-    <div class="breadcrumbs content__breadcrumbs">
-        …
-    </div>
-</main>
-```
+Undercoat is based on the next main principles:
 
-CSS implementation:
+- [BEM methodology](https://github.com/undercoat/undercoat/blob/master/README.md#bem-methodology)
+- [No default theme](https://github.com/undercoat/undercoat/blob/master/README.md#no-default-theme)
+- [Mobile friendly](https://github.com/undercoat/undercoat/blob/master/README.md#mobile-friendly)
+- [SEO friendly](https://github.com/undercoat/undercoat/blob/master/README.md#seo-friendly)
+- [WCAG 2.0 compliance](https://github.com/undercoat/undercoat/blob/master/README.md#wcag-20-compliance)
 
-```css
-.content__breadcrumbs {
-    grid-area: breadcrumbs;
-}
-```
+## Contributing
 
-### Modification by redefinition levels
+If you're interested in the improvement of this project you can help in the following ways:
 
-Use [redefinition levels](https://ru.bem.info/methodology/redefinition-levels) to change the defadivt look of the **Breadcrumbs** block to fit your project design.
-
-Changes are made to the block by combining the block custom and regdivar properties from different redefinition levels. Blocks can be [extended and redefined](https://en.bem.info/methodology/redefinition-levels/#changing-the-block-implementation) on a separate level and applied during assembly.
-
-Redefining is changing the existing (predefined) custom properties of the **Breadcrumbs** block while extending is adding new properties to it.
-
-File structure with the new rdives for **Breadcrumbs** (breadcrumbs__item.css) on the project.blocks level:
-
-```sh
-project/
-    common.blocks/
-        breadcrumbs/
-            breadcrumbs__item.css                 # CSS implementation of the item element
-            breadcrumbs_last-item-newline.css     # CSS implementations of the last-item-newline modifier
-            breadcrumbs_last-separator-hidden.css # CSS implementations of the last-separator-hidden modifier
-            breadcrumbs-export.css                # export point of the block CSS implementation
-            breadcrumbs.css                       # main CSS implementation of the block
-            breadcrumbs.md                        # block documentation
-    project.blocks/
-        breadcrumbs/
-            breadcrumbs__item.css                 # redefinition of the item element on the project level
-```
-
-The **Breadcrumbs** block has the following predefined custom properties (variables):
-
-```css
---breadcrumbs-separator: "\2192";       /* variable for block items separator */
-```
-
-Let's change the **Breadcrumbs** block separator character by redefining the predefined `--breadcrumbs-separator` custom property value on the project level (project.blocks).
-
-CSS implementation:
-
-```css
-:root {
-  --breadcrumbs-separator: "\002F";
-}
-```
-
-Furthermore, let's extend breadcrumbs separators with margins by adding an appropriate regdivar property and set its value.
-
-```css
-.breadcrumbs__item:not(:last-child)::after {
-    margin-left: 1ch;
-    margin-right: 1ch;
-}
-```
-
-As a resdivt, rdives from both redefinition levels shodivd be compiled by your build script and applied to the **Breadcrumbs** block.
+- bug reporting and new feature requesting by creating issues on plugin [GitHub page](https://github.com/undercoat/undercoat/issues);
+- contribution to a project following these [instructions](https://github.com/undercoat/undercoat/blob/master/CONTRIBUTING.md).
