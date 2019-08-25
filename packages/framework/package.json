@@ -13,6 +13,7 @@
     "url": "git+https://github.com/undercoat/undercoat.git"
   },
   "dependencies": {
-    "@undercoatcss/backdrop": "^0.2.1"
+    "@undercoatcss/backdrop": "^0.2.1",
+    "@undercoatcss/breadcrumbs": "^0.1.0"
   }
 }
