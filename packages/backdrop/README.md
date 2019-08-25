@@ -8,7 +8,7 @@ Backdrop is a component of the [Undercoat.css](https://github.com/undercoat/unde
 
 ## Description
 
-Breadcrumbs is a logically and functionally independent reusable page component (block), which represents a camouflage surface. It appears behind all other surfaces in the UI to make it disabled. Сommonly used with dialog component (modal).
+Backdrop is a logically and functionally independent reusable page component (block), which represents a camouflage surface. It appears behind all other surfaces in the UI to make it disabled. Сommonly used with dialog component (modal).
 
 ## Installation
 
@@ -38,15 +38,15 @@ import '@undercoatcss/backdrop/backdrop.css';
 
 ## Settings
 
-The component provides CSS custom properties to change change predefined settings.
+The component provides CSS custom property to change its defaults.
 
-| Property                               | Default value |
-| -                                      | -             |
-| --backdrop--z-index                    | 99            |
-| --backdrop--opacity                    | 0.5           |
-| --backdrop--background-color           | #000000       |
-| --backdrop--transition-duration        | 0.5s          |
-| --backdrop--transition-timing-function | ease          |
+| Property                               | Default value
+| -                                      | -
+| --backdrop--z-index                    | 99
+| --backdrop--opacity                    | 0.5
+| --backdrop--background-color           | #000000
+| --backdrop--transition-duration        | 0.5s
+| --backdrop--transition-timing-function | ease
 
 ## Methods
 
@@ -83,7 +83,7 @@ and **2 recent** mobile versions of:
 * Chrome
 * Safari
 
-We support only recent browsers to keep our components' codebase clean and provide high performance.
+We support only recent browsers to keep the components codebase clean and provide high performance.
 
 The `.browserlist` config is provided.
 
@@ -96,8 +96,6 @@ Undercoat is based on the next main principles:
 - [Mobile friendly](https://github.com/undercoat/undercoat/blob/master/README.md#mobile-friendly)
 - [SEO friendly](https://github.com/undercoat/undercoat/blob/master/README.md#seo-friendly)
 - [WCAG 2.0 compliance](https://github.com/undercoat/undercoat/blob/master/README.md#wcag-20-compliance)
-
-
 
 ## Contributing
 
