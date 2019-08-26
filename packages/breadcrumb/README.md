@@ -121,3 +121,5 @@ If you're interested in the improvement of this project you can help in the foll
 
 - bug reporting and new feature requesting by creating issues on plugin [GitHub page](https://github.com/undercoat/undercoat/issues);
 - contribution to a project following these [instructions](https://github.com/undercoat/undercoat/blob/master/CONTRIBUTING.md).
+
+<!-- TODO: Remove (fix release version bump) -->
