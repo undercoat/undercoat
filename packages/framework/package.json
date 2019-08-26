@@ -1,6 +1,6 @@
 {
   "name": "@undercoatcss/framework",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A lightweight CSS framework with no default theme out of the box.",
   "keywords": [
     "CSS framework",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/undercoat/undercoat.git"
   },
   "dependencies": {
-    "@undercoatcss/backdrop": "^0.2.1",
-    "@undercoatcss/breadcrumb": "^0.1.0"
+    "@undercoatcss/backdrop": "^0.3.0",
+    "@undercoatcss/breadcrumb": "^0.3.0"
   }
 }
