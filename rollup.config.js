@@ -45,5 +45,14 @@ export default [{
       format: 'umd'
     },
     plugins: plugins
+  },
+  {
+    input: 'packages/breadcrumb/breadcrumb.js',
+    output: {
+      name: 'Breadcrumb',
+      file: 'packages/breadcrumb/dist/breadcrumb.min.js',
+      format: 'umd'
+    },
+    plugins: plugins
   }
 ];
