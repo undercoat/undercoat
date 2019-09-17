@@ -54,5 +54,14 @@ export default [{
       format: 'umd'
     },
     plugins: plugins
+  },
+  {
+    input: 'packages/product-card/product-card.js',
+    output: {
+      name: 'ProductCard',
+      file: 'packages/product-card/dist/product-card.min.js',
+      format: 'umd'
+    },
+    plugins: plugins
   }
 ];
