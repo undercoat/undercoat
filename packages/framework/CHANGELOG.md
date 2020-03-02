@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/undercoat/undercoat/compare/v0.3.0...v0.4.0) (2020-03-02)
+
+
+### Features
+
+* Add Grid component ([cbd1486](https://github.com/undercoat/undercoat/commit/cbd1486))
+
+
+
+
+
 # [0.3.0](https://github.com/undercoat/undercoat/compare/v0.2.1...v0.3.0) (2019-08-26)
 
 **Note:** Version bump only for package @undercoatcss/framework
