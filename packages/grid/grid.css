@@ -1,0 +1,47 @@
+:root {
+  /* Settings */
+  --grid-columns-number: 24;
+  --grid-columns-width-min: 13;
+  --grid-columns-width-max: 50;
+  --grid-width-max: 1920;
+  --grid-column-gap: 0;
+  --grid-margin-inline: 2vw; /* TODO: 'vw' should be replaced with 'vi' following the support of the browsers */
+
+  /* Values calculation & Units assignment */
+  --grid-width-min: calc(var(--grid-columns-number) * var(--grid-columns-width-min));
+  --grid-width-min-size: calc(var(--grid-width-min) * 1px);
+  --grid-width-max-size: calc(var(--grid-width-max) * 1px);
+  --grid-columns-width-min-units: calc(var(--grid-columns-width-min) * 1px);
+  --grid-columns-width-max-units: calc(var(--grid-columns-width-max) * 1px);
+  --grid-column-gap-size: calc(var(--grid-column-gap) * 1px);
+  --grid-column-size: calc(100% / var(--grid-columns-number));
+
+  /* Layout */
+  --grid-columns-width-minmax: minmax(var(--grid-columns-width-min-units), var(--grid-columns-width-max-units));
+  --grid-template-columns-number: repeat(var(--grid-columns-number), var(--grid-columns-width-minmax));
+  --grid-template-columns: [expand-start] minmax(var(--grid-margin-inline), 1fr) [grid-start] var(--grid-template-columns-number) [grid-end] minmax(var(--grid-margin-inline), 1fr) [expand-end];
+}
+
+.grid {
+  min-width: var(--grid-width-min-size);
+  max-width: var(--grid-width-max-size);
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-areas: var(--grid-template-areas);
+  grid-column-gap: var(--grid-column-gap-size);
+}
+
+.grid__itemExpand {
+  grid-column: expand-start / expand-end;
+}
+
+/* Component utility classes */
+.subgrid {
+  display: grid;
+  grid-template-columns: var(--grid-template-columns-number);
+  grid-column-gap: inherit;
+}
+
+.subgrid.grid__itemExpand {
+  grid-template-columns: inherit;
+}
