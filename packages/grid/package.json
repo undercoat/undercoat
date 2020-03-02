@@ -1,6 +1,6 @@
 {
   "name": "@undercoatcss/grid",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Grid component for the Undercoat CSS Framework",
   "keywords": [
     "CSS framework",
@@ -12,5 +12,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/undercoat/undercoat.git"
-  }
+  },
+  "gitHead": "c0400cc2376f539c20ab6378886ec2b6896d7c69"
 }
