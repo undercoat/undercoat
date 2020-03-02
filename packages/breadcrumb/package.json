@@ -1,0 +1,14 @@
+{
+  "name": "@undercoatcss/breadcrumb",
+  "version": "0.1.0",
+  "description": "Breadcrumb component for the Undercoat CSS framework",
+  "keywords": [
+    "breadcrumb",
+    "undercoat"
+  ],
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undercoat/undercoat.git"
+  }
+}

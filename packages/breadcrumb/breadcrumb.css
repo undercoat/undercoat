@@ -1,0 +1,22 @@
+:root {
+  --breadcrumb--separator: '\2192';
+}
+
+.breadcrumb__list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.breadcrumb__item {
+  display: flex;
+  list-style-type: none;
+}
+
+.breadcrumb__item::before {
+  content: '\200B'; /* fix for sreen readers */
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: var(--breadcrumb--separator);
+}
