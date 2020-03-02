@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The HTML5 Herald</title>
+    <link rel="stylesheet" href="form-input.css">
+    <style>
+    :root {
+      /* Settings */
+      --grid-columns-number: 24;
+      --grid-columns-width-min: 13;
+      --grid-columns-width-max: 50;
+      --grid-width-max: 1920;
+      --grid-column-gap: 0;
+      --grid-margin-inline: 2vw; /* TODO: 'vw' should be replaced with 'vi' following the support of the browsers */
+
+      /* Values calculation & Units assignment */
+      --grid-width-min: calc(var(--grid-columns-number) * var(--grid-columns-width-min));
+      --grid-width-min-size: calc(var(--grid-width-min) * 1px);
+      --grid-width-max-size: calc(var(--grid-width-max) * 1px);
+      --grid-columns-width-min-units: calc(var(--grid-columns-width-min) * 1px);
+      --grid-columns-width-max-units: calc(var(--grid-columns-width-max) * 1px);
+      --grid-column-gap-size: calc(var(--grid-column-gap) * 1px);
+      --grid-column-size: calc(100% / var(--grid-columns-number));
+
+      /* Layout */
+      --grid-columns-width-minmax: minmax(var(--grid-columns-width-min-units), var(--grid-columns-width-max-units));
+      --grid-template-columns-number: repeat(var(--grid-columns-number), var(--grid-columns-width-minmax));
+      --grid-template-columns: [expand-start] minmax(var(--grid-margin-inline), 1fr) [grid-start] var(--grid-template-columns-number) [grid-end] minmax(var(--grid-margin-inline), 1fr) [expand-end];
+    }
+
+    .grid {
+      min-width: var(--grid-width-min-size);
+      max-width: var(--grid-width-max-size);
+      display: grid;
+      grid-template-columns: var(--grid-template-columns);
+      grid-template-areas: var(--grid-template-areas);
+      grid-column-gap: var(--grid-column-gap-size);
+    }
+
+    .grid__itemExpand {
+      grid-column: expand-start / expand-end;
+    }
+
+    /* Component utility classes */
+    .subgrid {
+      display: grid;
+      grid-template-columns: var(--grid-template-columns-number);
+      grid-column-gap: inherit;
+    }
+
+    .subgrid.grid__itemExpand {
+      grid-template-columns: inherit;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper grid">
+      <div class="form">
+        <div class="form-row">
+          <label class="form-label" for="text">label</label>
+          <input class="form-input" id="text" type="text">
+          <span class="form-message">Error</span>
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="select">label</label>
+          <select class="form-select" id="select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <span class="form-message">Error</span>
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="select-multiple">label</label>
+          <select class="form-select" id="select-multiple" size="2" multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <span class="form-message">Error</span>
+        </div>
+        <div class="form-row">
+          <fieldset class="form-fieldset">
+            <!-- <div class="test"> -->
+              <legend class="form-legend">legend</legend>
+                <div class="form-legend__wrapper">
+                  <label class="form-fieldset-label">
+                    <input class="form-checkbox" type="checkbox"> option 1
+                  </label>
+                  <label class="form-fieldset-label">
+                    <input class="form-checkbox" type="checkbox"> option 2
+                  </label>
+                </div>
+            <!-- </div> -->
+          </fieldset>
+          <span class="form-message">Error</span>
+        </div>
+        <div class="form-row">
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">legend</legend>
+            <div class="form-legend__wrapper">
+              <label class="form-fieldset-label">
+                <input class="form-radio" type="radio" name="radiobutton">
+                option 1
+              </label>
+              <label class="form-fieldset-label">
+                <input class="form-radio" type="radio"name="radiobutton">
+                option 2
+              </label>
+            </div>
+          </fieldset>
+          <span class="form-message">Error</span>
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="textarea">label</label>
+          <textarea class="form-textarea" id="textarea"></textarea>
+          <span class="form-message">Error</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
