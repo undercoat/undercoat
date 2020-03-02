@@ -1,8 +1,42 @@
-# Grid component for the Undercoat CSS Framework
+# @undercoatcsss/grid
 
-## Grid system
+Grid is a component of the [Undercoat.css](https://github.com/undercoat/undercoat) framework.
 
-The grid is based on 24 columns (tracks) by default. It's like 12 columns but more flexible since it can be split into 2, 3, 4 and even 6, 8 and 12 equal parts! But you can configure the number of columns following your requirements.
+![Travis (.org)](https://img.shields.io/travis/undercoat/undercoat.svg?style=flat-square) ![npm (scoped)](https://img.shields.io/npm/v/@undercoatcss/grid?style=flat-square) ![WCAG 2.0 Level AA](https://img.shields.io/badge/WCAG_2.0-Level_AA-brightgreen.svg?style=flat-square) ![schema.org](https://img.shields.io/badge/microdata-schema.org-brightgreen.svg?style=flat-square)
+
+> **CAUTION! IT'S UNDER HEAVY DEVELOPMENT CURRENTLY! DON'T USE IT IN PRODUCTION!**
+
+## Description
+
+Grid is a logically and functionally independent reusable **page component** (block), which represents a **grid system** for designing a layout of the pages.
+
+Grid is based on 24 columns (tracks) by default. It's like 12 columns but more flexible since it can be split into 2, 3, 4 and even 6, 8 and 12 equal parts! But you can configure the number of columns following your requirements.
+
+## Installation
+
+### NPM
+
+```bash
+npm install @undercoatcss/grid
+```
+
+## Usage
+
+After installation, you can link or import the assets into your project:
+
+### CDN
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@undercoatcss/grid@latest/dist/grid.min.css">
+```
+
+### Webpack
+
+```javascript
+import '@undercoatcss/grid/grid.css';
+```
+
+## Settings
 
 The default grid settings are stored in CSS custom properties and are below (px units):
 ```CSS
