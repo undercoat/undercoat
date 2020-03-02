@@ -38,6 +38,15 @@ export default [{
     plugins: plugins
   },
   {
+    input: 'packages/grid/grid.js',
+    output: {
+      name: 'Grid',
+      file: 'packages/grid/dist/grid.min.js',
+      format: 'umd'
+    },
+    plugins: plugins
+  },
+  {
     input: 'packages/backdrop/backdrop.js',
     output: {
       name: 'Backdrop',
